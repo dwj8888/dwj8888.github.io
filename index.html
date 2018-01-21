@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+   <link rel="stylesheet" type="text/css" href="css/css.css">
+   <link rel="shortcut icon" href="img/favicon.ico" />
+   <style>
+    canvas{
+    	background: rgb(156,167,179);
+    	display: block;
+    }
+   </style>
+</head>
+<body>
+   <canvas id="canvas">你的浏览器不支持，请升级或者更换浏览器！！</canvas>
+   <div id="dwj">
+      <div class="logo">
+         <h1>
+                    <span><b>丁</b></span>
+                    <span><b>文</b></span>
+                    <span><b>娟</b></span>
+                    <span><b>&amp;</b></span>
+                    <span><b>欢</b></span>
+                    <span><b>迎</b></span>
+                    <span><b>你</b></span>
+                </h1>
+      </div>
+      <h2>Code Changes The World</h2>
+     <!--  <p><a href="http://www.91pms.top/" target="_blank">Blog</a></p> -->
+      <p><a href="https://github.com/dwj8888" target="_blank">Github</a></p>
+      <p><a href="" target="_blank">Game</a></p>
+      <p><a href="" target="_blank">个人简历</a></p>
+      <p><a href="" target="_blank">个人项目</a></p>
+      <p><a href="" target="_blank">博客园</a></p>
+   </div>
+   <audio src="img/Music.mp3" autoplay loop></audio>
+</body>
+</html>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bg.js"></script>
+<script>
+	setTimeout(function(){
+		$("b").each(function(i){
+			$(this).css("transition-delay",i*0.2+"s");
+			$(this).css("transform","none");
+		});
+	},1000)
+</script>
